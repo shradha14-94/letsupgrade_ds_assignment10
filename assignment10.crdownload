@@ -1,0 +1,85 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[2]:
+
+
+import numpy as np
+matrix=[]
+
+row=int(input("Enter row:"))
+col=int(input("Enter col: "))
+
+for i in range(row):
+    em_list=[]
+    for j in range(col):
+        val=int(input("Enter value: "))
+        em_list.append(val)
+    matrix.append(em_list)
+print(em_list)
+print(matrix)
+
+
+# In[3]:
+
+
+for i in range(row):
+    for j in range(col):
+        print(matrix[i][j],end="  ")
+    print()
+
+
+# In[4]:
+
+
+arr=np.array(matrix)
+arr
+
+
+# In[5]:
+
+
+arr.ndim
+
+
+# In[6]:
+
+
+arr.shape
+
+
+# In[7]:
+
+
+type(arr)
+
+
+# In[8]:
+
+
+sum=0
+for i in arr:
+    sum=sum+i
+print(sum)
+
+
+# In[9]:
+
+
+sum_=0
+for j in sum:
+    sum_=sum_+j
+print(sum_)
+
+
+# In[10]:
+
+
+np.sum(arr)
+
+
+# In[ ]:
+
+
+
+
